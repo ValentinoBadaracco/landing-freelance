@@ -25,6 +25,8 @@ export default function Hero() {
           backgroundPosition: "right center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
+          maskImage: "linear-gradient(to right, transparent, black 25%)",
+          WebkitMaskImage: "linear-gradient(to right, transparent, black 25%)",
         }}
         className="absolute inset-y-0 right-0 -z-10 w-1/2"
       />
