@@ -11,13 +11,8 @@ export default function Hero() {
   return (
     <section className="relative isolate flex min-h-[80vh] w-full flex-col items-start justify-center gap-6 px-6 py-24 text-left sm:px-16 sm:py-32">
       <div
-        style={{
-          backgroundImage: "url('/hero-left-image.png')",
-          backgroundPosition: "left -100px",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-        className="absolute inset-0 -z-20"
+        style={{ backgroundImage: "url('/hero-left-image.png')" }}
+        className="absolute inset-0 -z-20 bg-cover bg-no-repeat bg-top-left sm:bg-position-[left_-100px]"
       />
       <div
         style={{
@@ -28,10 +23,10 @@ export default function Hero() {
           maskImage: "linear-gradient(to right, transparent, black 25%)",
           WebkitMaskImage: "linear-gradient(to right, transparent, black 25%)",
         }}
-        className="absolute inset-y-0 right-0 -z-10 w-1/2"
+        className="absolute inset-y-0 right-0 -z-10 hidden w-1/2 sm:block"
       />
       <motion.div
-        className="pointer-events-none absolute -right-10 bottom-0 -z-0 hidden w-[75%] max-w-5xl sm:block"
+        className="pointer-events-none absolute -right-10 bottom-0 z-0 hidden w-[75%] max-w-5xl sm:block"
         initial={{ opacity: 0, y: 120, scale: 0.7 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         viewport={{ once: true }}

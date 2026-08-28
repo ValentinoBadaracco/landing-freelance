@@ -32,18 +32,16 @@ const beneficios = [
 
 export default function ProblemSection() {
   return (
-    <section id="problem" className="flex w-full items-between items-center gap-10 px-6 text-center sm:px-16 bg-primary-100">
+    <section id="problem" className="flex w-full flex-col items-center gap-10 px-6 py-16 text-center sm:flex-row sm:px-16 sm:py-4 bg-primary-100">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-2xl font-semibold leading-tight text-start tracking-tight text-black dark:text-zinc-50 sm:text-4xl">
+        <h1 className="text-[26px] font-semibold leading-tight text-start tracking-tight text-primary-900 sm:text-4xl">
           Estar online ya no es una opción,
-        </h1>
-        <h1 className="text-2xl font-semibold leading-tight text-start tracking-tight text-black dark:text-zinc-50 sm:text-4xl">
-          es necesario
+          <br className="hidden sm:block" /> es necesario
         </h1>
         <div className="mt-6 text-lg leading-8 text-primary-800 flex flex-col text-start">
           <p className="mt-6 text-lg leading-8 text-primary-800">
@@ -51,7 +49,7 @@ export default function ProblemSection() {
             antes de hablar con vos, antes de verlo en persona.
             Una página bien hecha transmite que tenes un negocio serio y profesional, incluso antes del primer contacto.
           </p>
-          <p className="mt-6 text-lg leading-8 text-primary-800">
+          <p className="mt-6 text-lg leading-8 text-primary-800 hidden md:block">
             En la era digital, tu página web es tu carta de presentación.
             Una página web bien diseñada y funcional no solo atrae a más clientes,
             sino que también genera confianza y credibilidad en tu negocio.
@@ -63,13 +61,13 @@ export default function ProblemSection() {
 
       </motion.div>
 
-      <div className="flex w-full flex-col items-center gap-10 px-6 py-24 text-center sm:px-16">
+      <div className="flex w-full flex-col items-center gap-10  py-5 md:py-24 text-center sm:px-16">
 
-        <div className="flex w-full min-w-xl gap-6 items-start justify-center flex-wrap">
+        <div className="flex w-full gap-6 items-start justify-center flex-wrap">
           {beneficios.map(({ icon: Icon, title, description }, index) => (
             <motion.div
               key={title}
-              className="flex w-xl items-center justify-start gap-4 text-start rounded-lg bg-primary-50 px-6 py-8 shadow-lg"
+              className="flex w-full max-w-xl sm:w-xl items-center justify-start gap-4 text-start rounded-lg bg-primary-50 px-6 py-8 shadow-lg"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
