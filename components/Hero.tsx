@@ -9,7 +9,7 @@ const MotionLink = motion.create(Link);
 
 export default function Hero() {
   return (
-    <section className="relative isolate flex min-h-[80vh] w-full flex-col items-start justify-center gap-6 px-6 py-24 text-left sm:px-16 sm:py-32">
+    <section className="relative isolate flex min-h-[80vh] w-full flex-col items-start justify-center gap-6 px-6 py-16 md:py-24 text-left sm:px-16 sm:py-32">
       <div
         style={{ backgroundImage: "url('/hero-left-image.png')" }}
         className="absolute inset-0 -z-20 bg-cover bg-no-repeat bg-top-left sm:bg-position-[left_-100px]"

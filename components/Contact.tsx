@@ -11,7 +11,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="flex w-full flex-col items-center gap-6 px-6 py-24 text-center sm:px-16 bg-primary-900"
+      className="flex w-full flex-col items-center gap-6 px-6 py-16 md:py-24 text-center sm:px-16 bg-primary-900"
     >
       <motion.h1
         className="max-w-2xl text-2xl font-semibold leading-tight tracking-tight text-primary-50 sm:text-4xl"

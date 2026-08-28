@@ -40,6 +40,10 @@ html {
   -ms-overflow-style: none;
 }
 
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
 html::-webkit-scrollbar {
   display: none;
 }

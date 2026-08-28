@@ -8,9 +8,9 @@ import { FiHelpCircle, FiLayout, FiShoppingCart } from "react-icons/fi";
 
 export default function ServicesSection() {
     return (
-        <section id="services" className="flex w-full flex-col items-center gap-6 px-6 py-24 text-center sm:px-16 bg-primary-200">
+        <section id="services" className="flex w-full flex-col items-center gap-6 px-6 py-16 md:py-24 text-center sm:px-16 bg-primary-200">
             <motion.h1
-                className="text-2xl font-semibold leading-tight tracking-tight text-primary-950 dark:text-zinc-50 sm:text-4xl"
+                className="text-[26px] font-semibold leading-tight tracking-tight text-primary-950 dark:text-zinc-50 sm:text-4xl"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}

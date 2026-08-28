@@ -61,7 +61,7 @@ export default function ProblemSection() {
 
       </motion.div>
 
-      <div className="flex w-full flex-col items-center gap-10  py-5 md:py-24 text-center sm:px-16">
+      <div className="flex w-full flex-col items-center gap-10 py-5 md:py-24 text-center sm:px-16">
 
         <div className="flex w-full gap-6 items-start justify-center flex-wrap">
           {beneficios.map(({ icon: Icon, title, description }, index) => (

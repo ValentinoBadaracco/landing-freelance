@@ -11,9 +11,9 @@ const items = [
 
 export default function WhyMe() {
     return (
-        <section id="why-me" className="flex w-full flex-col items-center justify-center gap-10 px-6 py-24 sm:px-16 bg-white">
+        <section id="why-me" className="flex w-full flex-col items-center justify-center gap-10 px-6 py-16 md:py-24 sm:px-16 bg-white">
             <div className="mx-auto max-w-2xl text-center">
-                <h2 className="text-2xl font-semibold text-primary-950 sm:text-4xl">
+                <h2 className="text-[26px] font-semibold text-primary-950 sm:text-4xl">
                     ¿Por qué elegirme?
                 </h2>
             </div>
@@ -32,7 +32,7 @@ export default function WhyMe() {
                             {item.number}
                         </span>
                         <div>
-                            <p className="text-base font-medium text-primary-900">{item.title}</p>
+                            <p className="text-md font-medium text-primary-900">{item.title}</p>
                             <p className="text-sm leading-relaxed text-primary-700">{item.description}</p>
                         </div>
                     </motion.div>

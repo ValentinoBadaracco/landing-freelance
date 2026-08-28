@@ -51,15 +51,15 @@ export default function Header() {
             className="flex flex-col gap-3 border-t border-primary-100 px-6 py-6 text-lg font-body text-primary-900 sm:hidden"
           >
             <Link href="#services" onClick={() => setIsOpen(false)} className="flex items-center gap-3 hover:text-primary-500 transition-colors">
-              <FiBriefcase className="text-xl" />
+              <FiBriefcase className="text-xl text-primary-500" />
               Servicios
             </Link>
             <Link href="#projects" onClick={() => setIsOpen(false)} className="flex items-center gap-3 hover:text-primary-500 transition-colors">
-              <FiFolder className="text-xl" />
+              <FiFolder className="text-xl text-primary-500" />
               Proyectos
             </Link>
             <Link href="#about" onClick={() => setIsOpen(false)} className="flex items-center gap-3 hover:text-primary-500 transition-colors">
-              <FiUser className="text-xl" />
+              <FiUser className="text-xl text-primary-500" />
               Acerca de mí
             </Link>
             <Link

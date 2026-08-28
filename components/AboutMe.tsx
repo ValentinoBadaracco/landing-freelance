@@ -14,7 +14,7 @@ const tecnologias = [
 
 export default function AboutMe() {
     return (
-        <section id="about" className="flex w-full flex-col gap-6 px-6 py-24 text-start sm:justify-around sm:flex-row  sm:px-16 bg-primary-200">
+        <section id="about" className="flex w-full flex-col gap-6 px-6 py-16 md:py-24 text-start sm:justify-around sm:flex-row  sm:px-16 bg-primary-200">
             <motion.div
                 className="flex max-w-xl flex-col items-start gap-6"
                 initial={{ opacity: 0, x: -40 }}
