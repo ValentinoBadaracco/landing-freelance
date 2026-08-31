@@ -6,17 +6,22 @@ import { FiExternalLink } from "react-icons/fi";
 export default function Projects() {
   return (
 
-    <section id="projects" className="flex w-full flex-col items-center gap-10 px-6 py-16 md:py-24 text-center sm:px-16 bg-primary-100">
-      <h1 className="text-[26px] font-semibold leading-tight tracking-tight text-primary-950 dark:text-zinc-50 sm:text-4xl">
+    <section id="projects" className="relative isolate flex w-full flex-col items-center gap-10 overflow-hidden px-6 py-16 md:py-24 text-center sm:px-16 bg-primary-100">
+      <div className="absolute -top-12 right-20 h-36 w-36 rounded-full bg-primary-500 -z-10" />
+      <div className="absolute bottom-8 -left-8 h-24 w-24 rounded-full border-4 border-primary-900 -z-10" />
+      <div className="absolute top-24 left-10 h-14 w-14 rotate-12 rounded-lg bg-primary-500 -z-10" />
+
+      <h1 className="text-[26px] font-semibold leading-tight tracking-tight text-primary-950 sm:text-4xl">
         Proyectos de diseño y desarrollo web realizados
       </h1>
       <div className="grid w-full max-w-6xl grid-cols-1 gap-6 sm:grid-cols-3">
         <motion.div
-          className="min-h-64 md:min-h-72 flex flex-col gap-5 rounded-lg bg-primary-50 shadow-lg"
+          className="min-h-64 md:min-h-72 flex flex-col gap-5 rounded-lg bg-primary-50 shadow-[0_10px_40px_-15px_rgba(64,122,183,0.35)]"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
+          whileHover={{ scale: 1.05 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.4, delay: 0 }}
+          transition={{ duration: 0.3, delay: 0 }}
         >
           <div className="relative aspect-video overflow-hidden rounded-t-lg">
             <video
@@ -28,43 +33,63 @@ export default function Projects() {
               playsInline
             />
           </div>
-          <div className="flex items-center justify-between gap-2 px-6">
-            <h2 className="text-xl text-primary-900 ">
-              Catalogo Web
-            </h2>
-            <FiExternalLink className="text-primary-500 text-2xl cursor-pointer" />
+          <div className="flex flex-col  items-start gap-2 px-6">
+            <div className="flex items-center justify-between gap-2 w-full">
+
+              <h2 className="text-xl text-primary-900 ">
+                Catalogo Web
+              </h2>
+              <div className="flex items-center gap-2 text-primary-500 border border-primary-300 rounded-full px-3 py-1">
+                <FiExternalLink className="text-primary-500 text-2xl cursor-pointer" />
+              </div>
+            </div>
+            <p className="text-primary-800 text-[14px] leading-relaxed font-body text-start">
+              Catálogo de productos con carrito, pedidos por WhatsApp y panel de administración propio con posibilidad
+              de importar archivos excel para cargar productos y actualizar precios.
+            </p>
+
           </div>
         </motion.div>
         <motion.div
-          className="min-h-64 md:min-h-72 flex flex-col gap-5 rounded-lg bg-primary-50 shadow-lg"
+          className="min-h-64 md:min-h-72 flex flex-col gap-5 rounded-lg bg-primary-50 shadow-[0_10px_40px_-15px_rgba(64,122,183,0.35)]"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
+          whileHover={{ scale: 1.05 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.4, delay: 0.15 }}
+          transition={{ duration: 0.3, delay: 0.15 }}
         >
           <div className="relative aspect-video overflow-hidden rounded-t-lg">
             <video
-              className="absolute inset-0 h-full w-full object-cover"
-              src="/videos/landing-page.mp4"
+              className="absolute inset-0 h-full w-full scale-135 object-cover"
+              src="/visitas.mp4"
               autoPlay
               muted
               loop
               playsInline
             />
           </div>
-          <div className="flex items-center justify-between gap-2 px-6">
-            <h2 className="text-xl text-primary-900 ">
-              Sistema de visitas
-            </h2>
-            <FiExternalLink className="text-primary-500 text-2xl cursor-pointer" />
+          <div className="flex flex-col items-start gap-3 px-6 pb-6">
+            <div className="flex items-center justify-between gap-2 w-full">
+              <h2 className="text-xl text-primary-900 ">
+                Sistema de visitas
+              </h2>
+              <span className="text-xs text-primary-500 border border-primary-300 rounded-full px-3 py-1">
+                Uso privado
+              </span>
+            </div>
+            <p className="text-primary-800 text-[14px] leading-relaxed font-body text-start">
+              Gestión de visitas comerciales con agenda, carga de clientes y ruteo optimizado en mapa.
+              También cuenta con un panel de administración para la gestión de usuarios, estadísticas y avisos.
+            </p>
           </div>
         </motion.div>
         <motion.div
-          className="min-h-64 md:min-h-72 flex flex-col gap-5 rounded-lg bg-primary-50 shadow-lg"
+          className="min-h-64 md:min-h-72 flex flex-col gap-5 rounded-lg bg-primary-50 shadow-[0_10px_40px_-15px_rgba(64,122,183,0.35)]"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
+          whileHover={{ scale: 1.05 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.4, delay: 0.3 }}
+          transition={{ duration: 0.3, delay: 0.3 }}
         >
           <div className="relative aspect-video overflow-hidden rounded-t-lg">
             <video

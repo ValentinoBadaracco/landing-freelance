@@ -32,8 +32,13 @@ const beneficios = [
 
 export default function ProblemSection() {
   return (
-    <section id="problem" className="flex w-full flex-col items-center gap-10 px-6 py-16 text-center sm:flex-row sm:px-16 sm:py-4 bg-primary-100">
+    <section id="problem" className="relative isolate flex w-full flex-col items-center gap-10 overflow-hidden px-6 py-16 text-center sm:flex-row sm:px-16 sm:py-4 bg-primary-100">
+      <div className="absolute -top-8 -left-8 h-32 w-32 rounded-full bg-primary-500 -z-10" />
+      <div className="absolute bottom-10 right-10 h-40 w-40 rounded-full border-4 border-primary-900 -z-10" />
+      <div className="absolute top-20 right-40 h-16 w-16 rotate-12 rounded-lg bg-primary-500 -z-10" />
+
       <motion.div
+        className="relative z-10"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -61,13 +66,13 @@ export default function ProblemSection() {
 
       </motion.div>
 
-      <div className="flex w-full flex-col items-center gap-10 py-5 md:py-24 text-center sm:px-16">
+      <div className="relative z-10 flex w-full flex-col items-center gap-10 py-5 md:py-24 text-center sm:px-16">
 
         <div className="flex w-full gap-6 items-start justify-center flex-wrap">
           {beneficios.map(({ icon: Icon, title, description }, index) => (
             <motion.div
               key={title}
-              className="flex w-full max-w-xl sm:w-xl items-center justify-start gap-4 text-start rounded-lg bg-primary-50 px-6 py-8 shadow-lg"
+              className="flex w-full max-w-xl sm:w-xl items-center justify-start gap-4 text-start rounded-lg bg-primary-50 px-6 py-8 shadow-[0_10px_40px_-15px_rgba(64,122,183,0.35)]"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

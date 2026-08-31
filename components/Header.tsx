@@ -9,7 +9,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full sticky top-0 z-50 border-b border-primary-100 bg-white">
+    <header className="w-full sticky top-0 z-50 border-b border-primary-100 bg-white/60 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 gap-8 sm:px-16">
         <Link href="/" className="text-xl font-heading text-primary-950">
           Valentino Badaracco

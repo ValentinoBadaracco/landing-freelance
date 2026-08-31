@@ -11,8 +11,12 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="flex w-full flex-col items-center gap-6 px-6 py-16 md:py-24 text-center sm:px-16 bg-primary-900"
+      className="relative isolate flex w-full flex-col items-center gap-6 overflow-hidden px-6 py-16 md:py-24 text-center sm:px-16 bg-primary-900"
     >
+      <div className="absolute -top-10 -left-10 h-28 w-28 rounded-full bg-primary-500 opacity-20 -z-10" />
+      <div className="absolute bottom-16 -right-8 h-36 w-36 rounded-full border-4 border-primary-400 opacity-25 -z-10" />
+      <div className="absolute top-10 right-24 h-16 w-16 rotate-12 rounded-lg bg-primary-500 opacity-20 -z-10" />
+
       <motion.h1
         className="max-w-2xl text-2xl font-semibold leading-tight tracking-tight text-primary-50 sm:text-4xl"
         initial={{ opacity: 0, y: 20 }}

@@ -14,7 +14,10 @@ const tecnologias = [
 
 export default function AboutMe() {
     return (
-        <section id="about" className="flex w-full flex-col gap-6 px-6 py-16 md:py-24 text-start sm:justify-around sm:flex-row  sm:px-16 bg-primary-200">
+        <section id="about" className="relative isolate flex w-full flex-col gap-6 overflow-hidden px-6 py-16 md:py-24 text-start sm:justify-around sm:flex-row  sm:px-16 bg-primary-200">
+            <div className="absolute -bottom-8 -right-8 h-32 w-32 rotate-12 rounded-lg bg-primary-500 -z-10" />
+            <div className="absolute -top-8 -left-8 h-32 w-32 rotate-12 rounded-full bg-primary-500 -z-10" />
+
             <motion.div
                 className="flex max-w-xl flex-col items-start gap-6"
                 initial={{ opacity: 0, x: -40 }}
@@ -22,7 +25,7 @@ export default function AboutMe() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
             >
-                <h1 className="text-3xl font-semibold justify-center items-center leading-tight tracking-tight text-primary-900 dark:text-zinc-50 sm:text-4xl">
+                <h1 className="text-3xl font-semibold justify-center items-center leading-tight tracking-tight text-primary-900 sm:text-4xl">
                     Sobre mí
                 </h1>
                 <h2 className="text-2xl text-primary-600 ">Valentino, estudiante de Ingeniería en Sistemas.</h2>
@@ -41,7 +44,7 @@ export default function AboutMe() {
                 </p>
             </motion.div>
             <motion.div
-                className="flex min-h-64 w-full max-w-lg items-center justify-center self-center rounded-lg bg-primary-50 p-6 shadow-lg"
+                className="flex min-h-64 w-full max-w-lg items-center justify-center self-center rounded-lg bg-primary-50 p-6 shadow-[0_10px_40px_-15px_rgba(64,122,183,0.35)]"
                 initial={{ opacity: 0, x: 40 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}

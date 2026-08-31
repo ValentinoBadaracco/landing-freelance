@@ -8,9 +8,14 @@ import { FiHelpCircle, FiLayout, FiShoppingCart } from "react-icons/fi";
 
 export default function ServicesSection() {
     return (
-        <section id="services" className="flex w-full flex-col items-center gap-6 px-6 py-16 md:py-24 text-center sm:px-16 bg-primary-200">
+        <section id="services" className="relative isolate flex w-full flex-col items-center gap-6 overflow-hidden px-6 py-16 md:py-24 text-center sm:px-16 bg-primary-200">
+            <div className="absolute top-10 -right-6 h-24 w-24 rotate-12 rounded-lg bg-primary-500 -z-10" />
+            <div className="absolute -bottom-10 left-16 h-20 w-20 rounded-full bg-primary-900 -z-10" />
+            <div className="absolute top-1/3 -left-8 h-16 w-16 rounded-full border-4 border-primary-900 -z-10" />
+            <div className="absolute bottom-20 right-20 h-12 w-12 rounded-full bg-primary-900 opacity-15 -z-10" />
+
             <motion.h1
-                className="text-[26px] font-semibold leading-tight tracking-tight text-primary-950 dark:text-zinc-50 sm:text-4xl"
+                className="text-[26px] font-semibold leading-tight tracking-tight text-primary-950 sm:text-4xl"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -20,7 +25,7 @@ export default function ServicesSection() {
             </motion.h1>
             <div className="flex flex-col gap-6 sm:flex-row">
                 <motion.div
-                    className="min-h-64 max-w-sm flex flex-col justify-center items-center gap-6 flex-1 px-10 py-8 rounded-lg bg-primary-50 shadow-lg"
+                    className="min-h-64 max-w-sm flex flex-col justify-center items-center gap-6 flex-1 px-10 py-8 rounded-lg bg-primary-50 shadow-[0_10px_40px_-15px_rgba(64,122,183,0.35)]"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -46,7 +51,7 @@ export default function ServicesSection() {
                     </Link>
                 </motion.div>
                 <motion.div
-                    className="min-h-64 max-w-sm flex flex-col justify-center items-center gap-6 flex-1 px-10 py-8 rounded-lg bg-primary-50 shadow-lg"
+                    className="min-h-64 max-w-sm flex flex-col justify-center items-center gap-6 flex-1 px-10 py-8 rounded-lg bg-primary-50 shadow-[0_10px_40px_-15px_rgba(64,122,183,0.35)]"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -71,7 +76,7 @@ export default function ServicesSection() {
                     </Link>
                 </motion.div>
                 <motion.div
-                    className="min-h-64 max-w-sm flex flex-col justify-center items-center gap-6 flex-1 px-10 py-8 rounded-lg bg-primary-50 shadow-lg"
+                    className="min-h-64 max-w-sm flex flex-col justify-center items-center gap-6 flex-1 px-10 py-8 rounded-lg bg-primary-50 shadow-[0_10px_40px_-15px_rgba(64,122,183,0.35)]"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
