@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { FiExternalLink } from "react-icons/fi";
 
 export default function Projects() {
@@ -39,9 +40,14 @@ export default function Projects() {
               <h2 className="text-xl text-primary-900 ">
                 Catalogo Web
               </h2>
-              <div className="flex items-center gap-2 text-primary-500 border border-primary-300 rounded-full px-3 py-1">
+              <Link
+                href="https://catalogo-web-rose-one.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-primary-500 border border-primary-300 rounded-full px-3 py-1"
+              >
                 <FiExternalLink className="text-primary-500 text-2xl cursor-pointer" />
-              </div>
+              </Link>
             </div>
             <p className="text-primary-800 text-[14px] leading-relaxed font-body text-start">
               Catálogo de productos con carrito, pedidos por WhatsApp y panel de administración propio con posibilidad
@@ -94,18 +100,26 @@ export default function Projects() {
           <div className="relative aspect-video overflow-hidden rounded-t-lg">
             <video
               className="absolute inset-0 h-full w-full object-cover"
-              src="/videos/landing-page.mp4"
+              src="/landing.mp4"
               autoPlay
               muted
               loop
               playsInline
             />
           </div>
-          <div className="flex items-center justify-between gap-2 px-6">
-            <h2 className="text-xl text-primary-900 ">
-              Landing Page
-            </h2>
-            <FiExternalLink className="text-primary-500 text-2xl cursor-pointer" />
+          <div className="flex flex-col items-start gap-3 px-6 pb-6">
+            <div className="flex items-center justify-between gap-2 w-full">
+              <h2 className="text-xl text-primary-900 ">
+                Landing Page
+              </h2>
+              <span className="text-xs text-primary-500 border border-primary-300 rounded-full px-3 py-1">
+                La estás viendo ahora
+              </span>
+            </div>
+            <p className="text-primary-800 text-[14px] leading-relaxed font-body text-start">
+              Página simple donde tu negocio se presenta: quién sos, qué ofrecés, y cómo contactarte,
+              con un diseño rápido y enfocado en convertir visitas en clientes.
+            </p>
           </div>
         </motion.div>
       </div>
