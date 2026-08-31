@@ -79,7 +79,7 @@ export default function Projects() {
               <h2 className="text-xl text-primary-900 ">
                 Sistema de visitas
               </h2>
-              <span className="text-xs text-primary-500 border border-primary-300 rounded-full px-3 py-1">
+              <span className="text-xs text-primary-500 border border-primary-300 rounded-full px-1.5 md:px-3 py-1">
                 Uso privado
               </span>
             </div>
@@ -112,7 +112,7 @@ export default function Projects() {
               <h2 className="text-xl text-primary-900 ">
                 Landing Page
               </h2>
-              <span className="text-xs text-primary-500 border border-primary-300 rounded-full px-3 py-1">
+              <span className="text-xs text-primary-500 border border-primary-300 rounded-full px-1.5 md:px-3 py-1">
                 La estás viendo ahora
               </span>
             </div>
