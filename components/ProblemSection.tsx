@@ -33,9 +33,9 @@ const beneficios = [
 export default function ProblemSection() {
   return (
     <section id="problem" className="relative isolate flex w-full flex-col items-center gap-10 overflow-hidden px-6 py-16 text-center sm:flex-row sm:px-16 sm:py-4 bg-primary-100">
-      <div className="absolute -top-8 -left-8 h-32 w-32 rounded-full bg-primary-500 -z-10" />
-      <div className="absolute bottom-10 right-10 h-40 w-40 rounded-full border-4 border-primary-900 -z-10" />
-      <div className="absolute top-20 right-40 h-16 w-16 rotate-12 rounded-lg bg-primary-500 -z-10" />
+      <div className="absolute -top-8 -left-8 h-32 w-32 rounded-full bg-primary-500 -z-10 hidden md:block" />
+      <div className="absolute bottom-10 right-10 h-40 w-40 rounded-full border-4 border-primary-900 -z-10 hidden md:block" />
+      <div className="absolute top-20 right-40 h-16 w-16 rotate-12 rounded-lg bg-primary-500 -z-10 hidden md:block" />
 
       <motion.div
         className="relative z-10"

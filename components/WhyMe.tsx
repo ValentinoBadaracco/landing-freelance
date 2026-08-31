@@ -12,10 +12,10 @@ const items = [
 export default function WhyMe() {
     return (
         <section id="why-me" className="relative isolate flex w-full flex-col items-center justify-center gap-10 overflow-hidden px-6 py-16 md:py-24 sm:px-16 bg-white">
-            <div className="absolute -top-10 -left-10 h-28 w-28 rounded-full border-4 border-primary-500 -z-10" />
-            <div className="absolute bottom-16 -right-8 h-16 w-16 rounded-full bg-primary-900  -z-10" />
-            <div className="absolute top-1/2 right-24 h-12 w-12 rotate-45 rounded-lg bg-primary-500  -z-10" />
-            <div className="absolute top-30 left-10 h-10 w-10 rounded-full border-4 border-primary-900  -z-10" />
+            <div className="absolute -top-10 -left-10 h-28 w-28 rounded-full border-4 border-primary-500 -z-10 hidden md:block" />
+            <div className="absolute bottom-16 -right-8 h-16 w-16 rounded-full bg-primary-900  -z-10 hidden md:block" />
+            <div className="absolute top-1/2 right-24 h-12 w-12 rotate-45 rounded-lg bg-primary-500  -z-10 hidden md:block" />
+            <div className="absolute top-30 left-10 h-10 w-10 rounded-full border-4 border-primary-900  -z-10 hidden md:block" />
 
             <div className="mx-auto max-w-2xl text-center">
                 <h2 className="text-[26px] font-semibold text-primary-950 sm:text-4xl">

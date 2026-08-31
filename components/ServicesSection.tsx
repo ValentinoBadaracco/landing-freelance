@@ -9,10 +9,10 @@ import { FiHelpCircle, FiLayout, FiShoppingCart } from "react-icons/fi";
 export default function ServicesSection() {
     return (
         <section id="services" className="relative isolate flex w-full flex-col items-center gap-6 overflow-hidden px-6 py-16 md:py-24 text-center sm:px-16 bg-primary-200">
-            <div className="absolute top-10 -right-6 h-24 w-24 rotate-12 rounded-lg bg-primary-500 -z-10" />
-            <div className="absolute -bottom-10 left-16 h-20 w-20 rounded-full bg-primary-900 -z-10" />
-            <div className="absolute top-1/3 -left-8 h-16 w-16 rounded-full border-4 border-primary-900 -z-10" />
-            <div className="absolute bottom-20 right-20 h-12 w-12 rounded-full bg-primary-900 opacity-15 -z-10" />
+            <div className="absolute top-10 -right-6 h-24 w-24 rotate-12 rounded-lg bg-primary-500 -z-10 hidden md:block" />
+            <div className="absolute -bottom-10 left-16 h-20 w-20 rounded-full bg-primary-900 -z-10 hidden md:block" />
+            <div className="absolute top-1/3 -left-8 h-16 w-16 rounded-full border-4 border-primary-900 -z-10 hidden md:block" />
+            <div className="absolute bottom-20 right-20 h-12 w-12 rounded-full bg-primary-900 opacity-15 -z-10 hidden md:block" />
 
             <motion.h1
                 className="text-[26px] font-semibold leading-tight tracking-tight text-primary-950 sm:text-4xl"

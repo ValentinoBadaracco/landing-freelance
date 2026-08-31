@@ -15,8 +15,8 @@ const tecnologias = [
 export default function AboutMe() {
     return (
         <section id="about" className="relative isolate flex w-full flex-col gap-6 overflow-hidden px-6 py-16 md:py-24 text-start sm:justify-around sm:flex-row  sm:px-16 bg-primary-200">
-            <div className="absolute -bottom-8 -right-8 h-32 w-32 rotate-12 rounded-lg bg-primary-500 -z-10" />
-            <div className="absolute -top-8 -left-8 h-32 w-32 rotate-12 rounded-full bg-primary-500 -z-10" />
+            <div className="absolute -bottom-8 -right-8 h-32 w-32 rotate-12 rounded-lg bg-primary-500 -z-10 hidden md:block" />
+            <div className="absolute -top-8 -left-8 h-32 w-32 rotate-12 rounded-full bg-primary-500 -z-10 hidden md:block" />
 
             <motion.div
                 className="flex max-w-xl flex-col items-start gap-6"
@@ -54,7 +54,7 @@ export default function AboutMe() {
                     {tecnologias.map(({ icon: Icon, name, color }) => (
                         <div
                             key={name}
-                            className="flex flex-col items-center gap-2 rounded-lg bg-primary-100 px-6 py-6"
+                            className="flex flex-col items-center gap-2 rounded-lg bg-primary-100 px-6 py-4 md:py-6"
                         >
                             <Icon className="text-4xl" style={{ color }} />
                             <span className="text-sm font-medium text-primary-900">{name}</span>
