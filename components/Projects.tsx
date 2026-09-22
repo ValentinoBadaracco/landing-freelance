@@ -3,11 +3,12 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { FiExternalLink } from "react-icons/fi";
+import LazyVideo from "@/components/LazyVideo";
 
 export default function Projects() {
   return (
 
-    <section id="projects" className="relative isolate flex w-full flex-col items-center gap-10 overflow-hidden px-6 py-16 md:py-24 text-center sm:px-16 bg-primary-100">
+    <section id="projects" className="relative isolate flex w-full flex-col items-center gap-10 overflow-hidden px-6 py-16 md:py-24 text-center sm:px-16 bg-primary-200">
       <div className="absolute -top-12 right-20 h-36 w-36 rounded-full bg-primary-500 -z-10 hidden md:block" />
       <div className="absolute bottom-8 -left-8 h-24 w-24 rounded-full border-4 border-primary-900 -z-10 hidden md:block" />
       <div className="absolute top-24 left-10 h-14 w-14 rotate-12 rounded-lg bg-primary-500 -z-10 hidden md:block" />
@@ -25,20 +26,16 @@ export default function Projects() {
           transition={{ duration: 0.3, delay: 0 }}
         >
           <div className="relative aspect-video overflow-hidden rounded-t-lg">
-            <video
+            <LazyVideo
               className="absolute inset-0 h-full w-full scale-125 object-cover"
               src="/catalogoWeb.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
             />
           </div>
           <div className="flex flex-col  items-start gap-2 px-6">
             <div className="flex items-center justify-between gap-2 w-full">
 
               <h2 className="text-xl text-primary-900 ">
-                Catalogo Web
+                Catálogo Web
               </h2>
               <Link
                 href="https://catalogo-web-rose-one.vercel.app/"
@@ -65,13 +62,9 @@ export default function Projects() {
           transition={{ duration: 0.3, delay: 0.15 }}
         >
           <div className="relative aspect-video overflow-hidden rounded-t-lg">
-            <video
+            <LazyVideo
               className="absolute inset-0 h-full w-full scale-135 object-cover"
               src="/visitas.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
             />
           </div>
           <div className="flex flex-col items-start gap-3 px-6 pb-6">
@@ -98,13 +91,9 @@ export default function Projects() {
           transition={{ duration: 0.3, delay: 0.3 }}
         >
           <div className="relative aspect-video overflow-hidden rounded-t-lg">
-            <video
+            <LazyVideo
               className="absolute inset-0 h-full w-full object-cover"
               src="/landing.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
             />
           </div>
           <div className="flex flex-col items-start gap-3 px-6 pb-6">

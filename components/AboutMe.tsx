@@ -1,20 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SiNextdotjs, SiNodedotjs, SiReact, SiSupabase, SiTailwindcss, SiTypescript } from "react-icons/si";
-
-const tecnologias = [
-    { icon: SiReact, name: "React", color: "#61DAFB" },
-    { icon: SiNextdotjs, name: "Next.js", color: "#000000" },
-    { icon: SiTailwindcss, name: "Tailwind", color: "#06B6D4" },
-    { icon: SiTypescript, name: "TypeScript", color: "#3178C6" },
-    { icon: SiNodedotjs, name: "Node.js", color: "#339933" },
-    { icon: SiSupabase, name: "Supabase", color: "#3ECF8E" },
-];
+import Image from "next/image";
 
 export default function AboutMe() {
     return (
-        <section id="about" className="relative isolate flex w-full flex-col gap-6 overflow-hidden px-6 py-16 md:py-24 text-start sm:justify-around sm:flex-row  sm:px-16 bg-primary-200">
+        <section id="about" className="relative isolate flex w-full flex-col gap-6 overflow-hidden px-6 py-16 md:py-24 text-start sm:justify-around sm:flex-row  sm:px-16 bg-cream">
             <div className="absolute -bottom-8 -right-8 h-32 w-32 rotate-12 rounded-lg bg-primary-500 -z-10 hidden md:block" />
             <div className="absolute -top-8 -left-8 h-32 w-32 rotate-12 rounded-full bg-primary-500 -z-10 hidden md:block" />
 
@@ -28,39 +19,37 @@ export default function AboutMe() {
                 <h1 className="text-3xl font-semibold justify-center items-center leading-tight tracking-tight text-primary-900 sm:text-4xl">
                     Sobre mí
                 </h1>
-                <h2 className="text-2xl text-primary-600 ">Valentino, estudiante de Ingeniería en Sistemas.</h2>
+                <h2 className="text-2xl text-primary-600 ">Valentino, la persona detrás de Bada Studio.</h2>
                 <p className="max-w-2xl text-lg leading-8 text-primary-800">
-                    Soy diseñador y desarrollador web, y me dedico a ayudar a negocios a
-                    tener presencia online de forma simple y profesional. 
-                    Combino diseño y código para armar páginas que no solo funcionan bien,
-                    sino que también se ven bien — todo en un mismo lugar.
-
-
+                    Desde siempre me gustó tanto programar como diseñar, y encontré en el
+                    desarrollo web el lugar donde esas dos cosas se combinan. Me dedico a
+                    crear soluciones digitales pensadas para las personas que las van a
+                    usar: interfaces amigables y sistemas que de verdad le faciliten el día
+                    a día a un negocio, no solo que se vean bien.
                 </p>
                 <p className="max-w-2xl text-lg leading-8 text-primary-800">
-                    Trabajo de principio a fin en cada proyecto: desde la idea inicial
-                    hasta la puesta en producción, sin intermediarios y con comunicación
-                    directa en todo el proceso.
+                    Trabajo cada proyecto de punta a punta — del diseño al desarrollo,
+                    sin intermediarios y con comunicación directa en todo el proceso.
+                </p>
+                <p className="max-w-2xl text-lg leading-8 text-primary-800">
+                    Estoy terminando Ingeniería en Sistemas, y este es el trabajo donde
+                    aplico lo que voy aprendiendo.
                 </p>
             </motion.div>
             <motion.div
-                className="flex min-h-64 w-full max-w-lg items-center justify-center self-center rounded-lg bg-primary-50 p-6 shadow-[0_10px_40px_-15px_rgba(64,122,183,0.35)]"
+                className="flex w-full max-w-lg items-center justify-center self-center"
                 initial={{ opacity: 0, x: 40 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
             >
-                <div className="grid grid-cols-3 gap-4">
-                    {tecnologias.map(({ icon: Icon, name, color }) => (
-                        <div
-                            key={name}
-                            className="flex flex-col items-center gap-2 rounded-lg bg-primary-100 px-6 py-4 md:py-6"
-                        >
-                            <Icon className="text-4xl" style={{ color }} />
-                            <span className="text-sm font-medium text-primary-900">{name}</span>
-                        </div>
-                    ))}
-                </div>
+                <Image
+                    src="/Logo.png"
+                    alt="Bada Studio"
+                    width={400}
+                    height={400}
+                    className="h-auto w-full"
+                />
             </motion.div>
         </section>
     );

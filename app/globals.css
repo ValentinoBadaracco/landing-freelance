@@ -11,19 +11,21 @@
   --font-heading: var(--font-heading);
   --font-body: var(--font-body);
 
-  --color-primary-50: #F3F7FC;
-  --color-primary-100: #E7EDF7;
-  --color-primary-200: #C9DAEE;
-  --color-primary-300: #9ABBDF;
-  --color-primary-400: #6497CC;
-  --color-primary-500: #407AB7;
-  --color-primary-600: #2F609A;
-  --color-primary-700: #274D7D;
-  --color-primary-800: #244368;
-  --color-primary-900: #223958;
-  --color-primary-950: #17253A;
+  --color-primary-50: #F4F7FB;
+  --color-primary-100: #E7EEF7;
+  --color-primary-200: #CBDCEC;
+  --color-primary-300: #9DBEDC;
+  --color-primary-400: #689CC8;
+  --color-primary-500: #2F5D8A;
+  --color-primary-600: #2A517A;
+  --color-primary-700: #264666;
+  --color-primary-800: #243C56;
+  --color-primary-900: #182739;
+  --color-primary-950: #0C2135;
 
-
+  --color-cream: #F5F3EF;
+  --color-gray-text: #737373;
+  --color-gray-light: #B4B4B4;
 
 }
 

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { FiBriefcase, FiFolder, FiMenu, FiPhone, FiUser, FiX } from "react-icons/fi";
 
@@ -9,10 +10,19 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full sticky top-0 z-50 border-b border-primary-100 bg-white/60 backdrop-blur-md">
+    <header className="w-full sticky top-0 z-50 border-b border-primary-100 bg-cream/60 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 gap-8 sm:px-16">
-        <Link href="/" className="text-xl font-heading text-primary-950">
-          Valentino Badaracco
+        <Link href="/" className="flex items-center gap-3">
+          <Image
+            src="/BSLogo.png"
+            alt="Bada Studio"
+            width={2000}
+            height={2000}
+            className="h-14 w-auto rounded-full"
+          />
+          <span className="text-xl font-heading text-primary-950">
+            Bada Studio
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-8 text-lg font-body text-primary-900 sm:flex">
@@ -23,7 +33,7 @@ export default function Header() {
             Proyectos
           </Link>
           <Link href="#about" className="hover:text-primary-500 transition-colors">
-            Acerca de mí
+            Sobre mí
           </Link>
           <Link href="#contact" className="rounded-full bg-primary-500 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-primary-600 outline-none focus-visible:ring-2 focus-visible:ring-primary-300">
             Contacto
@@ -60,7 +70,7 @@ export default function Header() {
             </Link>
             <Link href="#about" onClick={() => setIsOpen(false)} className="flex items-center gap-3 hover:text-primary-500 transition-colors">
               <FiUser className="text-xl text-primary-500" />
-              Acerca de mí
+              Sobre mí
             </Link>
             <Link
               href="#contact"

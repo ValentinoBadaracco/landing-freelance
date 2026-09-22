@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FiClock, FiSearch, FiTrendingUp, FiUsers } from "react-icons/fi";
+import { FiClock, FiGlobe, FiInbox, FiSearch } from "react-icons/fi";
 
 const beneficios = [
   {
@@ -11,10 +11,10 @@ const beneficios = [
       "Te encuentran antes de que te contacten",
   },
   {
-    icon: FiUsers,
-    title: "Más confianza",
+    icon: FiInbox,
+    title: "Pedidos organizados",
     description:
-      "Brinda a tu negocio una imagen profesional y genera credibilidad frente a tus clientes.",
+      "Recibís los pedidos ordenados, sin perderte entre los mensajes del chat",
   },
   {
     icon: FiClock,
@@ -23,16 +23,16 @@ const beneficios = [
       "Disponible las 24 horas, sin que estés atendiendo",
   },
   {
-    icon: FiTrendingUp,
-    title: "Crece con tu negocio",
+    icon: FiGlobe,
+    title: "Presencia online",
     description:
-      "Sumá productos, servicios o secciones nuevas a medida que tu negocio va creciendo.",
+      "Aparecés en las búsquedas de Google cuando alguien busca tu negocio",
   },
 ];
 
 export default function ProblemSection() {
   return (
-    <section id="problem" className="relative isolate flex w-full flex-col items-center gap-10 overflow-hidden px-6 py-16 text-center sm:flex-row sm:px-16 sm:py-4 bg-primary-100">
+    <section id="problem" className="relative isolate flex w-full flex-col items-center gap-10 overflow-hidden px-6 py-16 text-center sm:flex-row sm:px-16 sm:py-4 bg-cream">
       <div className="absolute -top-8 -left-8 h-32 w-32 rounded-full bg-primary-500 -z-10 hidden md:block" />
       <div className="absolute bottom-10 right-10 h-40 w-40 rounded-full border-4 border-primary-900 -z-10 hidden md:block" />
       <div className="absolute top-20 right-40 h-16 w-16 rotate-12 rounded-lg bg-primary-500 -z-10 hidden md:block" />
@@ -50,17 +50,10 @@ export default function ProblemSection() {
         </h1>
         <div className="mt-6 text-lg leading-8 text-primary-800 flex flex-col text-start">
           <p className="mt-6 text-lg leading-8 text-primary-800">
-            Para muchos clientes, tu página web es la primera impresión que reciben de tu negocio —
-            antes de hablar con vos, antes de verlo en persona.
-            Una página bien hecha transmite que tenes un negocio serio y profesional, incluso antes del primer contacto.
+            Para muchos clientes, tu página web es la primera impresión de tu negocio —
+            antes de hablar con vos o de conocerte en persona. Sin ella, estás perdiendo
+            pedidos y clientes que ni siquiera llegan a contactarte.
           </p>
-          <p className="mt-6 text-lg leading-8 text-primary-800 hidden md:block">
-            En la era digital, tu página web es tu carta de presentación.
-            Una página web bien diseñada y funcional no solo atrae a más clientes,
-            sino que también genera confianza y credibilidad en tu negocio.
-
-          </p>
-
         </div>
 
 

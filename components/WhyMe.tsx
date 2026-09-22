@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 
 const items = [
     { number: "01", title: "Diseño y código en un mismo lugar", description: "No necesitás coordinar entre dos proveedores distintos." },
-    { number: "02", title: "Comunicación directa", description: "Hablás conmigo, no con un intermediario." },
+    { number: "02", title: "Comunicación directa", description: "Sin cadenas de gente en el medio." },
     { number: "03", title: "Se ve bien en cualquier pantalla", description: "Tus clientes te van a ver igual de bien desde un celular, computadora o tablet." },
     { number: "04", title: "Acompañamiento después de la entrega", description: "Seguís teniendo soporte para ajustes y dudas." },
 ]
 
 export default function WhyMe() {
     return (
-        <section id="why-me" className="relative isolate flex w-full flex-col items-center justify-center gap-10 overflow-hidden px-6 py-16 md:py-24 sm:px-16 bg-white">
+        <section id="why-me" className="relative isolate flex w-full flex-col items-center justify-center gap-10 overflow-hidden px-6 py-16 md:py-24 sm:px-16 bg-primary-100">
             <div className="absolute -top-10 -left-10 h-28 w-28 rounded-full border-4 border-primary-500 -z-10 hidden md:block" />
             <div className="absolute bottom-16 -right-8 h-16 w-16 rounded-full bg-primary-900  -z-10 hidden md:block" />
             <div className="absolute top-1/2 right-24 h-12 w-12 rotate-45 rounded-lg bg-primary-500  -z-10 hidden md:block" />
@@ -19,7 +19,7 @@ export default function WhyMe() {
 
             <div className="mx-auto max-w-2xl text-center">
                 <h2 className="text-[26px] font-semibold text-primary-950 sm:text-4xl">
-                    ¿Por qué elegirme?
+                    ¿Por qué elegirnos?
                 </h2>
             </div>
 

@@ -49,7 +49,7 @@ export default function Hero() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.15 }}
         >
-          Me encargo de todo el proceso: diseño, desarrollo y puesta en marcha
+          Nos encargamos de todo el proceso: diseño, desarrollo y puesta en marcha
           de tu sitio web, sin necesidad de coordinar con terceros.
         </motion.p>
       </div>

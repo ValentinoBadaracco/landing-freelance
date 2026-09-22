@@ -33,8 +33,8 @@ export default function Contact() {
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.15 }}
       >
-        Contame qué necesitás y armamos juntos la página que tu negocio merece.
-        Estoy disponible para responder tus consultas.
+        Contanos qué necesitás y armamos juntos la página de tu negocio.
+        Respuesta rápida por WhatsApp.
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -48,7 +48,7 @@ export default function Contact() {
           whileTap={{ scale: 0.95 }}
           className="flex h-12 items-center justify-center rounded-full bg-primary-500 px-6 text-base font-medium text-white transition-colors hover:bg-primary-600"
         >
-          Contactame
+          Contactanos
         </MotionLink>
       </motion.div>
     </section>

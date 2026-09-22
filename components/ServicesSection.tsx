@@ -63,7 +63,7 @@ export default function ServicesSection() {
                             <FiShoppingCart className="shrink-0 text-3xl text-primary-500" />
                         </div>
                         <h2 className="text-2xl font-semibold text-primary-900">
-                            Catalogo web
+                            Catálogo web
                         </h2>
                     </div>
                     <p className="text-primary-800">Mostrá tus productos, gestioná el stock y recibí pedidos por WhatsApp — todo desde un panel propio.</p>
@@ -91,13 +91,13 @@ export default function ServicesSection() {
                             ¿Necesitás otra cosa?
                         </h2>
                     </div>
-                    <p className="text-primary-800">Comentame cual es tu necesidad y te ayudaré a encontrar la mejor solución para tu negocio</p>
+                    <p className="text-primary-800">Contanos cuál es tu necesidad y te ayudamos a encontrar la mejor solución para tu negocio</p>
 
                     <Link
                         href={getWhatsappLink("otro")}
                         className="mt-auto flex h-11 items-center justify-center rounded-full bg-primary-500 px-6 text-sm font-medium text-white transition-colors hover:bg-primary-600"
                     >
-                        Consultar información
+                        Contactanos
                     </Link>
                 </motion.div>
 
