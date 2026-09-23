@@ -71,7 +71,7 @@ export default function ProblemSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary-200">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary-200">
                 <Icon className="shrink-0 text-3xl text-primary-500" />
               </div>
               <p className="text-primary-800">{description}</p>

@@ -31,7 +31,7 @@ export default function Projects() {
               src="/catalogoWeb.mp4"
             />
           </div>
-          <div className="flex flex-col  items-start gap-2 px-6">
+          <div className="flex flex-col  items-start gap-3 px-6 pb-6">
             <div className="flex items-center justify-between gap-2 w-full">
 
               <h2 className="text-xl text-primary-900 ">

@@ -67,7 +67,7 @@ export default function Hero() {
         </motion.p>
       </div>
       <motion.div
-        className="flex flex-col gap-4 sm:flex-row"
+        className="flex w-full flex-col items-center gap-4 sm:w-auto sm:flex-row sm:items-start"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -76,14 +76,14 @@ export default function Hero() {
         <MotionLink
           href="#problem"
           whileHover={{ scale: 1.02 }}
-          className="flex h-12 text-primary-950 items-center justify-center rounded-full border border-solid border-primary-300  bg-primary-50/60 backdrop-blur-md hover:bg-primary-100 px-8 text-base"
+          className="flex h-12 w-full text-primary-950 items-center justify-center rounded-full border border-solid border-primary-300  bg-primary-50/60 backdrop-blur-md hover:bg-primary-100 px-8 text-base sm:w-auto"
         >
           ¿Por qué necesito una página?
         </MotionLink>
         <MotionLink
           href="#services"
           whileHover={{ scale: 1.02 }}
-          className="flex h-12 items-center justify-center rounded-full bg-primary-500 px-6 text-base font-medium text-white transition-colors hover:bg-primary-600"
+          className="flex h-12 w-full items-center justify-center rounded-full bg-primary-500 px-6 text-base font-medium text-white transition-colors hover:bg-primary-600 sm:w-auto"
         >
           Quiero mi pagina
         </MotionLink>

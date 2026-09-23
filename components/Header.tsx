@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,9 +8,21 @@ import { FiBriefcase, FiFolder, FiMenu, FiPhone, FiUser, FiX } from "react-icons
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <header className="w-full sticky top-0 z-50 border-b border-primary-100 bg-cream/60 backdrop-blur-md">
+    <header
+      className={`w-full sticky top-0 z-50 border-b border-primary-100 transition-colors duration-300 ${
+        scrolled ? "bg-cream/60 backdrop-blur-md" : "bg-cream"
+      }`}
+    >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 gap-8 sm:px-16">
         <Link href="/" className="flex items-center gap-3">
           <Image
