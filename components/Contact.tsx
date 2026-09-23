@@ -5,7 +5,7 @@ import { getWhatsappLink } from "@/lib/whatsapp";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-const MotionLink = motion(Link);
+const MotionLink = motion.create(Link);
 
 export default function Contact() {
   return (

@@ -1,6 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -8,6 +9,9 @@ import Link from "next/link";
 const MotionLink = motion.create(Link);
 
 export default function Hero() {
+  const laptopRef = useRef(null);
+  const isLaptopInView = useInView(laptopRef, { margin: "-100px" });
+
   return (
     <section
       style={{ backgroundImage: "url('/hero.png')" }}
@@ -20,8 +24,17 @@ export default function Hero() {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <motion.div
-          animate={{ scale: [1, 1.04, 1], rotate: [0, -1.5, 0, 1.5, 0] }}
-          transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+          ref={laptopRef}
+          animate={
+            isLaptopInView
+              ? { scale: [1, 1.04, 1], rotate: [0, -1.5, 0, 1.5, 0] }
+              : { scale: 1, rotate: 0 }
+          }
+          transition={
+            isLaptopInView
+              ? { duration: 5, repeat: Infinity, ease: "easeInOut" }
+              : { duration: 0.3 }
+          }
         >
           <Image
             src="/hero-laptop.png"

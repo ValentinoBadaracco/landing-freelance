@@ -9,6 +9,7 @@ interface LazyVideoProps {
 
 export default function LazyVideo({ src, className }: LazyVideoProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const loadedRef = useRef(false);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -16,11 +17,16 @@ export default function LazyVideo({ src, className }: LazyVideoProps) {
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (!entry.isIntersecting) return;
-        video.src = src;
-        video.load();
-        video.play().catch(() => {});
-        observer.disconnect();
+        if (entry.isIntersecting) {
+          if (!loadedRef.current) {
+            loadedRef.current = true;
+            video.src = src;
+            video.load();
+          }
+          video.play().catch(() => {});
+        } else if (loadedRef.current) {
+          video.pause();
+        }
       },
       { threshold: 0.25 }
     );
