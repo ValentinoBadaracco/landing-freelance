@@ -44,10 +44,10 @@ export default function AboutMe() {
                 transition={{ duration: 0.6 }}
             >
                 <Image
-                    src="/Logo.png"
+                    src="/LogoNuevo.png"
                     alt="Bada Studio"
-                    width={400}
-                    height={400}
+                    width={2000}
+                    height={2000}
                     className="h-auto w-full"
                 />
             </motion.div>
